@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Trending Music Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main>
+    <div class="cover-fixed">
+      <div class="swiper">
+        <div class="swiper-wrapper" id="slider"></div>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="toolbar" id="toolbar">
+        <div class="toolbar-left">
+          <input id="searchInput" class="search-input" type="text"
+                 placeholder="Search title or artist…" aria-label="Search">
+          <label class="liked-toggle">
+            <input id="likedOnlyToggle" type="checkbox">
+            <span>Liked only</span>
+          </label>
+        </div>
+        <div class="toolbar-right">
+          <span id="metaLine" class="meta-line">Source: playlist</span>
+          <button id="refreshBtn" class="pill-btn" title="Refresh">
+            <i class="fa-solid fa-rotate-right"></i> Refresh
+          </button>
+          <button id="helpBtn" class="pill-btn" title="Keyboard shortcuts">?</button>
+        </div>
+      </div>
+
+      <div class="playlist"></div>
+
+      <div class="player" role="region" aria-label="Player controls">
+        <audio id="audioPlayer" type="audio/mpeg"></audio>
+        <div class="controls" aria-label="Playback controls">
+          <i class="fa-solid fa-shuffle" id="shuffleBtn" role="button" tabindex="0" aria-label="Shuffle"></i>
+          <i class="fa-solid fa-backward" id="prevBtn" role="button" tabindex="0" aria-label="Previous"></i>
+          <button id="playPauseBtn" aria-label="Play/Pause">
+            <i class="fa-solid fa-play" id="playPauseIcon"></i>
+          </button>
+          <i class="fa-solid fa-forward" id="nextBtn" role="button" tabindex="0" aria-label="Next"></i>
+          <i class="fa-solid fa-repeat" id="repeatBtn" title="Repeat current: OFF" aria-pressed="false"></i>
+          <div class="volume" aria-label="Volume">
+            <i id="volumeIcon" class="fa-solid fa-volume-high" role="button" tabindex="0"></i>
+            <input type="range" id="volume-range" min="0" max="100" value="100">
+          </div>
+        </div>
+
+        <div class="timeline">
+          <span id="currentTime">0:00</span>
+          <div class="progress-wrap">
+            <input type="range" value="0" id="progress-bar" aria-label="Seek">
+            <div id="seekTooltip" class="seek-tooltip" role="tooltip">0:00</div>
+          </div>
+          <span id="totalTime">0:00</span>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <div id="helpOverlay" class="help-overlay" aria-modal="true" role="dialog">
+    <div class="help-card">
+      <h3>Keyboard shortcuts</h3>
+      <ul>
+        <li><kbd>Space</kbd> — Play / Pause</li>
+        <li><kbd>→</kbd> — Next track</li>
+        <li><kbd>←</kbd> — Previous track</li>
+        <li><kbd>Shift</kbd> + <kbd>→</kbd> — Seek +5s</li>
+        <li><kbd>Shift</kbd> + <kbd>←</kbd> — Seek -5s</li>
+        <li><kbd>?</kbd> — Toggle this help</li>
+      </ul>
+      <button id="closeHelpBtn" class="pill-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

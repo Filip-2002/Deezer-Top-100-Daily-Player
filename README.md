@@ -50,11 +50,11 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 
 ## 🎥 Demo
 
-![demo](demo/1.gif)
-![demo](demo/2.png)
-![demo](demo/3.png)
-![demo](demo/4.png)
-![demo](demo/5.png)
+![demo](Demo/1.gif)
+![demo](Demo/2.png)
+![demo](Demo/3.png)
+![demo](Demo/4.png)
+![demo](Demo/5.png)
 
 
 

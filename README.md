@@ -51,15 +51,15 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 
 
 
-
-
-
-
-
- 
 ## 🎥 Demo
 
 ![demo](demo/demo.gif)
+
+
+
+
+
+
 
 
 ## 🚀 How to Run
@@ -86,5 +86,26 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 3. Open `frontend\index.html`
 
    The backend (`node server.js`) must be running for the player to fetch Deezer tracks. If the backend is not started, the playlist will not load.
-  
-   
+
+
+## ⚠️ Notes
+
+- The app requires the backend server to be running (`node server.js`) for the frontend player to fetch daily updated tracks.
+
+- Local playback state (liked songs, shuffle/repeat mode, last played track, volume) is saved in the browser using localStorage, playback state is not shared between users.
+
+- There is n databse, all persistence is local-only (localStorage). This was a design choice to keep the app lightweight and simple to run.
+
+- The backend is a lightweight proxy for Deezer’s API. No personal data is stored or transmitted.
+
+- Designed so new playlists or charts can be added easily by changing API parameters.
+
+- The playlist updates automatically every 24 hours to reflect Deezer’s Top 100 worldwide chart.
+
+- Responsive design:
+  - On smaller screens the card deck hides automatically to prioritize the playlist and player.
+  - On large screens, the deck is always visible and centered alongside the playlist.
+
+- Tested on **Windows**, **MacBook**, and **Linux**, minor spacing may differ slightly depending on screen resolution.
+
+- No external frameworks, this is entirely built with **vanilla HTML**, **CSS**, and **JavaScript**, except for the backend proxy (**Node.js** + **Express**).

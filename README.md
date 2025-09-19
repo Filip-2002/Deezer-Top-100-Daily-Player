@@ -84,5 +84,7 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
    ```
 
 3. Open `frontend\index.html`
+
+   The backend (`node server.js`) must be running for the player to fetch Deezer tracks. If the backend is not started, the playlist will not load.
   
    

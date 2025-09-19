@@ -134,15 +134,6 @@ main:hover::before {
   border-radius: 40px;
 }
 
-.cover-fixed {
-  position: fixed;
-  top: 50%;
-  left: 26%;
-  transform: translate(-50%, -50%);
-  z-index: 50;
-  width: var(--deck-w);
-}
-
 .cover-fixed .swiper {
   width: 100%;
   height: auto;
@@ -619,6 +610,16 @@ main:hover::before {
 }
 
 
+.cover-fixed {
+  position: fixed;
+  top: 50%;
+  left: 26%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  width: var(--deck-w);
+}
+
+
 @media (max-width: 1300px) {
   main { width: 90% }
 }
@@ -677,6 +678,13 @@ main:hover::before {
   }
 }
 
+@media (max-width: 1440px) and (min-width: 1281px) {
+  .cover-fixed {
+    left: 24%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 .playlist-item .heart-btn.active,
 .playlist-item .heart-btn.active:hover,
 .playlist-item .heart-btn.active:focus {
@@ -694,3 +702,5 @@ main:hover::before {
   display: block;
   height: var(--player-safe, 50px);
 }
+
+

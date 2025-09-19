@@ -73,6 +73,7 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 2. Start the Backend (Node.js server):
    The backend acts as a proxy to Deezer’s API and auto-updates the Top 100 playlist.
    ```bash
+   cd Deezer-Top-100-Daily-Player
    cd backend
    npm install
    node server.js

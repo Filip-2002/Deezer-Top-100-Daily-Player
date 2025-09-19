@@ -66,7 +66,7 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/Deezer-Top-100-Daily-Player.git
+   git clone https://github.com/Filip-2002/Deezer-Top-100-Daily-Player.git
    cd Deezer-Top-100-Daily-Player
    ```
 

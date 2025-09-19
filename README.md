@@ -48,18 +48,13 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 - **Liked songs system** – save favorites and instantly filter to view only your liked tracks.
 
 
-
-
-
 ## 🎥 Demo
 
-![demo](demo/demo.gif)
-
-
-
-
-
-
+![demo](demo/1.gif)
+![demo](demo/2.png)
+![demo](demo/3.png)
+![demo](demo/4.png)
+![demo](demo/5.png)
 
 
 ## 🚀 How to Run

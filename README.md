@@ -50,11 +50,11 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
 
 ## 🎥 Demo
 
-<img src="Demo/1.gif" width="600">
-<img src="Demo/2.png" width="600">
 <img src="Demo/3.png" width="600">
 <img src="Demo/4.png" width="600">
 <img src="Demo/5.png" width="600">
+<img src="Demo/1.gif" width="600">
+<img src="Demo/2.png" width="600">
 
 
 ## 🚀 How to Run

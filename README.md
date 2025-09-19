@@ -83,16 +83,6 @@ Built with a modern **HTML**, **CSS**, and **JavaScript** **frontend** and a **l
    http://localhost:3000
    ```
 
-3. Open the Frontend
-
-   The frontend lives in the frontend folder. Simply open index.html in your browser:
-  
-   Option 1: double-click index.html
-  
-   Option 2: serve it with a local dev server (better for CORS/cache handling). Example:
-   ```bash
-   cd frontend
-   npx serve .
-   ```
+3. Open `frontend\index.html`
   
    
